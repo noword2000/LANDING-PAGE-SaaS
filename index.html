@@ -2,7 +2,6 @@
 <html lang="fr">
 
 <head>
-
     <!-- Balises méta importantes -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +9,17 @@
     <!-- Titre du Document -->
     <title>LANDING-PAGE Saas</title>
 
+    <!-- Favicon : Icône qui s'affiche dans l'onglet du navigateur -->
+    <link rel="icon" href="img/logo.png" type="image/png">
+
     <!-- Lien vers mon fichier style CSS (Bootstrap Personnalisé) -->
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Bootstrap Icons CSS -->
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
 
+    <!-- My Scripts -->
+    <script src="js/nav-link.js" defer></script>
 </head>
 
 <body>
@@ -38,19 +42,19 @@
                     <!-- Liens de Navigation -->
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Accueil</a>
+                            <a class="nav-link" href="#presentation">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Fonctionnalités</a>
+                            <a class="nav-link" href="#features">Fonctionnalités</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tarifs</a>
+                            <a class="nav-link" href="#pricing">Tarifs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Témoignages</a>
+                            <a class="nav-link" href="#testimonials">Témoignages</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                     </ul>
                     <!-- Boutons d'actions pour se connecter ou s'inscrire -->
@@ -69,7 +73,7 @@
     <!-- Contenu principal de la page Web -->
     <main>
         <!-- Section 1 : Section Hero pour présenter mon SaaS -->
-        <section>
+        <section id="presentation">
             <div class="px-4 py-5 my-5 text-center">
                 <!-- Logo du SaaS -->
                 <img class="d-block mx-auto mb-4" src="img/logo.png" alt="" width="100" height="100" />
@@ -97,7 +101,7 @@
             </div>
         </section>
         <!-- Section2 : Section Features pour montrer les fonctionnalités -->
-        <section>
+        <section id="features">
             <div class="container-fluid bg-light py-5">
                 <div class="container">
                     <!-- Titre de la section -->
@@ -162,7 +166,7 @@
             </div>
         </section>
         <!-- Section 3 : Section Pricing pour afficher des tarifs -->
-        <section>
+        <section id="pricing">
             <div class="container py-5">
                 <!-- Titre de la section -->
                 <div class="row text-center mb-5">
@@ -247,10 +251,22 @@
                 </div>
             </div>
         </section>
+        <!-- Section 4 : Section Testimonials pour afficher les Témoignages -->
+        <section id="testimonials">
+
+        </section>
+        <!-- Section 5 : Section FAQ pour afficher une foire aux questions -->
+        <section id="faq">
+
+        </section>
     </main>
+    <!-- Pied de page -->
+    <footer>
+
+    </footer>
+
     <!-- Bootstrap JS -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 
 </html>
