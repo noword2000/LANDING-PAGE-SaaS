@@ -34,7 +34,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Menu de navigation -->
-                <div class="collapse navbar-collapse" id="navbar">
+                <div class="collapse navbar-collapse text-center" id="navbar">
                     <!-- Liens de Navigation -->
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -54,8 +54,14 @@
                         </li>
                     </ul>
                     <!-- Boutons d'actions pour se connecter ou s'inscrire -->
-                    <a href="#" class="btn btn-outline-dark me-2">Connexion</a>
-                    <a href="#" class="btn btn-dark">Inscription</a>
+                    <a href="#" class="btn btn-outline-primary me-2">
+                        <i class="bi bi-person-check me-2"></i>
+                        Connexion
+                    </a>
+                    <a href="#" class="btn btn-outline-secondary">
+                        <i class="bi bi-rocket-takeoff"></i>
+                        Inscription
+                    </a>
                 </div>
             </div>
         </nav>
@@ -101,7 +107,7 @@
                     <!-- Fonctionnalités affichés avec des cards -->
                     <div class="row gy-3">
                         <!-- Fonctionnalité 1 -->
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-md-12 col-lg-4">
                             <div class="card text-center p-3">
                                 <div class="card-body">
                                     <button class="btn btn-outline-primary rounded-circle mb-4">
@@ -118,7 +124,7 @@
                             </div>
                         </div>
                         <!-- Fonctionnalité 2 -->
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-md-12 col-lg-4">
                             <div class="card text-center p-3">
                                 <div class="card-body">
                                     <button class="btn btn-outline-primary rounded-circle mb-4">
@@ -135,7 +141,7 @@
                             </div>
                         </div>
                         <!-- Fonctionnalité 3 -->
-                        <div class="col-12 col-md-6 col-lg-4">
+                        <div class="col-12 col-md-12 col-lg-4">
                             <div class="card text-center p-3">
                                 <div class="card-body">
                                     <button class="btn btn-outline-primary rounded-circle mb-4">
@@ -150,6 +156,92 @@
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 3 : Section Pricing pour afficher des tarifs -->
+        <section>
+            <div class="container py-5">
+                <!-- Titre de la section -->
+                <div class="row text-center mb-5">
+                    <h1 class="display-5 fw-bold">Nos Prix</h1>
+                </div>
+                <!-- Tarifs affichés avec des cards -->
+                <div class="row gy-3">
+                    <!-- Plan 1 -->
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center p-3 bg-light">
+                            <h5 class="card-title mb-4">Plan Free</h5>
+                            <h6 class="card-subtitle mb-4 display-5">0€</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Avantages</h6>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-danger"></i>
+                                    Jusqu'à 3 automatisations
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-danger"></i>
+                                    Support par email
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-danger"></i>
+                                    1 utilisateur
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Choisir ce plan</a>
+                        </div>
+                    </div>
+                    <!-- Plan 2 -->
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center p-3 bg-light">
+                            <span class="badge rounded-pill bg-primary mb-4">Recommandé</span>
+                            <h5 class="card-title mb-4">Plan Pro</h5>
+                            <h6 class="card-subtitle mb-4 display-5">29€/mois</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Avantages</h6>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i>
+                                    Automatisations illimitées
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i>
+                                    Support prioritaire
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i>
+                                    Analyses avancées
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i>
+                                    Connexion à 50+ outils
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Choisir ce plan</a>
+                        </div>
+                    </div>
+                    <!-- Plan 3 -->
+                    <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-center p-3 bg-light">
+                            <h5 class="card-title mb-4">Plan Business</h5>
+                            <h6 class="card-subtitle mb-4 display-5">99€/mois</h6>
+                            <h6 class="card-subtitle mb-2 text-muted">Avantages</h6>
+                            <ul class="list-group list-group-flush mb-4">
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i>
+                                    Tout le plan Pro + Accès API
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i>
+                                    Sécurité renforcée
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-check-circle text-success"></i>
+                                    Gestion d'équipe (utilisateurs illimités)
+                                </li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary">Choisir ce plan</a>
                         </div>
                     </div>
                 </div>
