@@ -8,3 +8,10 @@ $dark: #060d1a;//Titres, textes, Footer, Navbar
 $font-family-sans-serif: 'Roboto', sans-serif;//Corps de Texte
 $headings-font-family: 'Roboto Condensed', sans-serif;//Titres
 $headings-font-weight: 700;//Graisse des titres
+
+//Couleurs des éléments de mon navbar light
+$navbar-light-color:                rgba($dark, .55);
+$navbar-light-hover-color:          rgba($dark, .7);
+$navbar-light-active-color:         rgba($dark, .9);
+$navbar-light-disabled-color:       rgba($dark, .3);
+$navbar-light-toggler-border-color: rgba($dark, .1);
