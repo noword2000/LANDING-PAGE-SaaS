@@ -1,17 +1,21 @@
 //Couleurs
-$primary: #0a66c2;//Boutons principaux, Liens importants, Bordures, Icônes
-$secondary: #66a3ff;//Boutons secondaires, Eléments décoratifs, Lignes de séparation
-$light: #f0f7ff;//Background Section, Card, Formulaires
-$dark: #060d1a;//Titres, textes, Footer, Navbar
+$primary: #0a66c2; //Boutons principaux, Liens importants, Bordures, Icônes
+$secondary: #66a3ff; //Boutons secondaires, Eléments décoratifs, Lignes de séparation
+$light: #f0f7ff; //Background Section, Card, Formulaires
+$dark: #060d1a; //Titres, textes, Footer, Navbar
 
 //Polices
-$font-family-sans-serif: 'Roboto', sans-serif;//Corps de Texte
-$headings-font-family: 'Roboto Condensed', sans-serif;//Titres
-$headings-font-weight: 700;//Graisse des titres
+$font-family-sans-serif: 'Roboto', sans-serif; //Corps de Texte
+$headings-font-family: 'Roboto Condensed', sans-serif; //Titres
+$headings-font-weight: 700; //Graisse des titres
 
 //Couleurs des éléments de mon navbar light
-$navbar-light-color:                rgba($dark, .55);
-$navbar-light-hover-color:          rgba($dark, .7);
-$navbar-light-active-color:         rgba($dark, .9);
-$navbar-light-disabled-color:       rgba($dark, .3);
+$navbar-light-color: rgba($dark, .55);
+$navbar-light-hover-color: rgba($dark, .7);
+$navbar-light-active-color: rgba($dark, .9);
+$navbar-light-disabled-color: rgba($dark, .3);
 $navbar-light-toggler-border-color: rgba($dark, .1);
+
+//Couleurs des Tooltips
+$tooltip-color: white;
+$tooltip-bg: $primary;

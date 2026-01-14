@@ -20,13 +20,14 @@
 
     <!-- My Scripts -->
     <script src="js/nav-link.js" defer></script>
+    <script src="js/tooltip.js" defer></script>
 </head>
 
 <body>
     <!-- Entête de la page -->
     <header>
         <!-- Barre de navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border border-dark border-1">
             <div class="container">
                 <!-- Logo ou Titre du site web -->
                 <a class="navbar-brand" href="#">
@@ -62,7 +63,7 @@
                         <i class="bi bi-person-check me-2"></i>
                         Connexion
                     </a>
-                    <a href="#" class="btn btn-outline-secondary">
+                    <a href="#" class="btn btn-outline-primary">
                         <i class="bi bi-rocket-takeoff"></i>
                         Inscription
                     </a>
@@ -73,8 +74,9 @@
     <!-- Contenu principal de la page Web -->
     <main>
         <!-- Section 1 : Section Hero pour présenter mon SaaS -->
-        <section id="presentation">
-            <div class="px-4 py-5 my-5 text-center">
+        <div class="separateur" id="presentation"></div>
+        <section>
+            <div class="px-4 py-5 text-center">
                 <!-- Logo du SaaS -->
                 <img class="d-block mx-auto mb-4" src="img/logo.png" alt="" width="100" height="100" />
                 <!-- Titre Accrocheur -->
@@ -87,12 +89,12 @@
                     </p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                         <!-- Bouton Primaire -->
-                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+                        <button type="button" class="btn btn-outline-primary btn-lg px-4 gap-3">
                             <i class="bi bi-arrow-right"></i>
                             Démarrer gratuitement
                         </button>
                         <!-- Bouton Secondaire -->
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                        <button type="button" class="btn btn-outline-primary btn-lg px-4">
                             <i class="bi bi-play-circle"></i>
                             Voir la démo
                         </button>
@@ -101,7 +103,12 @@
             </div>
         </section>
         <!-- Section2 : Section Features pour montrer les fonctionnalités -->
-        <section id="features">
+        <div class="separateur container-fluid" id="features">
+            <div class="row justify-content-center align-items-center h-100">
+                ACCÉLÉREZ VOTRE FLUX ⚡
+            </div>
+        </div>
+        <section>
             <div class="container-fluid bg-light py-5">
                 <div class="container">
                     <!-- Titre de la section -->
@@ -112,7 +119,7 @@
                     <div class="row gy-3">
                         <!-- Fonctionnalité 1 -->
                         <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card text-center p-3">
+                            <div class="card text-center p-3 border border-secondary border-1">
                                 <div class="card-body">
                                     <button class="btn btn-outline-primary rounded-circle mb-4">
                                         <i class="bi bi-lightning-charge display-5"></i>
@@ -129,7 +136,7 @@
                         </div>
                         <!-- Fonctionnalité 2 -->
                         <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card text-center p-3">
+                            <div class="card text-center p-3 border border-secondary border-1">
                                 <div class="card-body">
                                     <button class="btn btn-outline-primary rounded-circle mb-4">
                                         <i class="bi bi-shield-check display-5"></i>
@@ -146,7 +153,7 @@
                         </div>
                         <!-- Fonctionnalité 3 -->
                         <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card text-center p-3">
+                            <div class="card text-center p-3 border border-secondary border-1">
                                 <div class="card-body">
                                     <button class="btn btn-outline-primary rounded-circle mb-4">
                                         <i class="bi bi-graph-up-arrow display-5"></i>
@@ -166,7 +173,12 @@
             </div>
         </section>
         <!-- Section 3 : Section Pricing pour afficher des tarifs -->
-        <section id="pricing">
+        <div class="separateur container-fluid" id="pricing">
+            <div class="row justify-content-center align-items-center h-100">
+                GAGNEZ DU TEMPS 🚀
+            </div>
+        </div>
+        <section>
             <div class="container py-5">
                 <!-- Titre de la section -->
                 <div class="row text-center mb-5">
@@ -176,7 +188,7 @@
                 <div class="row gy-3">
                     <!-- Plan 1 -->
                     <div class="col-12 col-md-12 col-lg-4">
-                        <div class="card text-center p-3 bg-light">
+                        <div class="card text-center p-3 bg-light border border-secondary border-1">
                             <h5 class="card-title mb-4">Plan Starter</h5>
                             <h6 class="card-subtitle mb-4 display-5">0€</h6>
                             <h6 class="card-subtitle mb-2 text-muted">Avantages</h6>
@@ -199,12 +211,12 @@
                     </div>
                     <!-- Plan 2 -->
                     <div class="col-12 col-md-12 col-lg-4">
-                        <div class="card text-center p-3 bg-light">
+                        <div class="card text-center p-3 bg-light border border-secondary border-5">
                             <span class="badge rounded-pill bg-primary mb-4">Recommandé</span>
                             <h5 class="card-title mb-4">Plan Pro</h5>
                             <h6 class="card-subtitle mb-4 display-5">29€/mois</h6>
                             <h6 class="card-subtitle mb-2 text-muted">Avantages</h6>
-                            <ul class="list-group list-group-flush mb-4">
+                            <ul class="list-group list-group-flush mb-4 border border-0">
                                 <li class="list-group-item">
                                     <i class="bi bi-check-circle text-success"></i>
                                     Automatisations illimitées
@@ -222,12 +234,12 @@
                                     Connexion à 50+ outils
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-primary">Choisir ce plan</a>
+                            <a href="#" class="btn btn-outline-primary">Choisir ce plan</a>
                         </div>
                     </div>
                     <!-- Plan 3 -->
                     <div class="col-12 col-md-12 col-lg-4">
-                        <div class="card text-center p-3 bg-light">
+                        <div class="card text-center p-3 bg-light border border-secondary border-1">
                             <h5 class="card-title mb-4">Plan Business</h5>
                             <h6 class="card-subtitle mb-4 display-5">99€/mois</h6>
                             <h6 class="card-subtitle mb-2 text-muted">Avantages</h6>
@@ -252,7 +264,12 @@
             </div>
         </section>
         <!-- Section 4 : Section Testimonials pour afficher les Témoignages -->
-        <section id="testimonials">
+        <div class="separateur container-fluid" id="testimonials">
+            <div class="row justify-content-center align-items-center h-100">
+                AUTOMATISEZ TOUT 🤖
+            </div>
+        </div>
+        <section>
             <div class="container-fluid bg-light py-5">
                 <div class="container">
                     <!-- Titre de la section -->
@@ -263,7 +280,7 @@
                     <div class="row gy-3">
                         <!-- Témoignage 1 -->
                         <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card">
+                            <div class="card p-3 border border-secondary border-1">
                                 <div class="card-header text-center bg-white">
                                     <i class="bi bi-star-fill text-warning"></i>
                                     .
@@ -276,7 +293,7 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title display-5 text-primary">
+                                    <h5 class="card-title display-5 text-secondary">
                                         <i class="bi bi-quote"></i>
                                     </h5>
                                     <p class="card-text fst-italic">"
@@ -286,7 +303,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer text-center bg-white">
-                                    <i class="bi bi-person-circle display-5 text-primary"></i>
+                                    <i class="bi bi-person-circle display-5 text-secondary"></i>
                                     <h5 class="fw-bold">Thomas Durant</h5>
                                     <h6 class="text-muted">CEO de StartUp Flow</h6>
                                 </div>
@@ -294,7 +311,7 @@
                         </div>
                         <!-- Témoignage 2 -->
                         <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card">
+                            <div class="card p-3 border border-secondary border-1">
                                 <div class="card-header text-center bg-white">
                                     <i class="bi bi-star-fill text-warning"></i>
                                     .
@@ -307,7 +324,7 @@
                                     <i class="bi bi-star-fill text-warning"></i>
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title display-5 text-primary">
+                                    <h5 class="card-title display-5 text-secondary">
                                         <i class="bi bi-quote"></i>
                                     </h5>
                                     <p class="card-text fst-italic">"
@@ -316,7 +333,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer text-center bg-white">
-                                    <i class="bi bi-person-circle display-5 text-primary"></i>
+                                    <i class="bi bi-person-circle display-5 text-secondary"></i>
                                     <h5 class="fw-bold">Sarah Martin</h5>
                                     <h6 class="text-muted">Consultante Data</h6>
                                 </div>
@@ -324,7 +341,7 @@
                         </div>
                         <!-- Témoignage 3 -->
                         <div class="col-12 col-md-12 col-lg-4">
-                            <div class="card">
+                            <div class="card p-3 border border-secondary border-1">
                                 <div class="card-header text-center bg-white">
                                     <i class="bi bi-star-fill text-warning"></i>
                                     .
@@ -337,7 +354,7 @@
                                     <i class="bi bi-star-half text-warning"></i>
                                 </div>
                                 <div class="card-body text-center">
-                                    <h5 class="card-title display-5 text-primary">
+                                    <h5 class="card-title display-5 text-secondary">
                                         <i class="bi bi-quote"></i>
                                     </h5>
                                     <p class="card-text fst-italic">"
@@ -346,7 +363,7 @@
                                     </p>
                                 </div>
                                 <div class="card-footer text-center bg-white">
-                                    <i class="bi bi-person-circle display-5 text-primary"></i>
+                                    <i class="bi bi-person-circle display-5 text-secondary"></i>
                                     <h5 class="fw-bold">Marc Lefebvre</h5>
                                     <h6 class="text-muted">CTO chez Innovate</h6>
                                 </div>
@@ -357,14 +374,19 @@
             </div>
         </section>
         <!-- Section 5 : Section FAQ pour afficher une foire aux questions -->
-        <section id="faq">
+        <div class="separateur container-fluid" id="faq">
+            <div class="row justify-content-center align-items-center h-100">
+                SÉCURITÉ MAXIMALE 🔒
+            </div>
+        </div>
+        <section>
             <div class="container py-5">
                 <!-- Titre de la section -->
                 <div class="row text-center mb-5">
                     <h1 class="display-5 fw-bold">Questions fréquentes</h1>
                 </div>
                 <!-- Accordion pour afficher les questions les plus fréquentes -->
-                <div class="accordion" id="faq">
+                <div class="accordion border border-secondary border-1" id="FAQ">
                     <!-- Question 1 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-question1">
@@ -374,7 +396,7 @@
                             </button>
                         </h2>
                         <div id="flushCollapseQ1" class="accordion-collapse collapse" aria-labelledby="flush-question1"
-                            data-bs-parent="#faq">
+                            data-bs-parent="#FAQ">
                             <div class="accordion-body bg-light">
                                 <p class="fw-bold mb-0">
                                     Oui, absolument. Nos abonnements sont sans engagement. Vous pouvez résumer ou
@@ -393,7 +415,7 @@
                             </button>
                         </h2>
                         <div id="flushCollapseQ2" class="accordion-collapse collapse" aria-labelledby="flush-question2"
-                            data-bs-parent="#faq">
+                            data-bs-parent="#FAQ">
                             <div class="accordion-body bg-light">
                                 <p class="fw-bold mb-0">
                                     La sécurité est notre priorité. Nous utilisons un chiffrement AES-256 (niveau
@@ -411,7 +433,7 @@
                             </button>
                         </h2>
                         <div id="flushCollapseQ3" class="accordion-collapse collapse" aria-labelledby="flush-question3"
-                            data-bs-parent="#faq">
+                            data-bs-parent="#FAQ">
                             <div class="accordion-body bg-light">
                                 <p class="fw-bold mb-0">
                                     Oui ! Le plan "Starter" est gratuit à vie pour vous permettre de tester nos
@@ -429,7 +451,7 @@
                             </button>
                         </h2>
                         <div id="flushCollapseQ4" class="accordion-collapse collapse" aria-labelledby="flush-question4"
-                            data-bs-parent="#faq">
+                            data-bs-parent="#FAQ">
                             <div class="accordion-body bg-light">
                                 <p class="fw-bold mb-0">
                                     Bien sûr. Notre SaaS s'intègre nativement avec plus de 50 applications populaires
@@ -444,7 +466,102 @@
     </main>
     <!-- Pied de page -->
     <footer>
-
+        <div class="separateur container-fluid">
+            <div class="row justify-content-center align-items-center h-100">
+                RESTEZ FOCUS ✨
+            </div>
+        </div>
+        <div class="container py-4">
+            <div class="row gy-3 text-center align-items-center">
+                <!-- Colonne 1 -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <!-- Copyright -->
+                    &copy;2026 SaaS. Tous droits réservés.
+                </div>
+                <!-- Colonne 2 -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <!-- Bouton du Modal -->
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#legalMentions">
+                        Mentions Légales
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="legalMentions" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="legalMentionsLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="legalMentionsLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-start">
+                                        1. Édition du site :
+                                        <br>
+                                        <br>
+                                        Le présent site est édité par <strong>SaaS</strong>, domicilié à Casablanca,
+                                        Maroc. Contact : saas@saas.com
+                                        <br>
+                                        <br>
+                                        2. Hébergement :
+                                        <br>
+                                        <br>
+                                        Le site est hébergé par saas-hosting. Adresse de l'hébergeur :
+                                        saas-hosting.com.
+                                        <br>
+                                        <br>
+                                        3. Propriété intellectuelle :
+                                        <br>
+                                        <br>
+                                        L'ensemble du contenu de ce site (textes, images,
+                                        logos, icônes) est la propriété exclusive de SaaS, sauf mention contraire. Toute
+                                        reproduction ou représentation totale ou partielle de ce site est interdite sans
+                                        autorisation préalable.
+                                        <br>
+                                        <br>
+                                        4. Données personnelles :
+                                        <br>
+                                        <br>
+                                        Conformément à la législation en vigueur, vous
+                                        disposez
+                                        d'un droit d'accès, de rectification et de suppression des données vous
+                                        concernant. Ce site ne collecte aucune donnée à votre insu.
+                                        <br>
+                                        <br>
+                                        5. Cookies :
+                                        <br>
+                                        <br>
+                                        Ce site utilise des cookies techniques nécessaires au bon
+                                        fonctionnement de la navigation et à l'affichage des composants interactifs.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">J'ai
+                                        compris</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Colonne 3 -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <!-- Réseaux sociaux -->
+                    <a class="btn btn-outline-primary" href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-primary" href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="btn btn-outline-primary" href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
