@@ -34,7 +34,6 @@ const sections = document.querySelectorAll("section");
 
 sections.forEach((section) => {
     section.addEventListener("mouseenter", (event) => {
-        console.log(section);
         //Si la souris est sur la section présentation
         if (section.id === "section-presentation") {
             liens_navigation.forEach((lien_navigation) => {
