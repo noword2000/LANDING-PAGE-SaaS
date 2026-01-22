@@ -1,26 +1,26 @@
-//Import de la police Roboto de Google
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+// Import de la police Roboto de Google
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
 
-//Import de nos variables(Couleurs et Polices)
-@import "./style_variables.scss";
+// Import de nos variables(Couleurs et Polices)
+@import "./style_variables";
 
-//Import de quelques fichiers Bootstrap Importants pour le map merge car je vais ajouter des classes utilitaires à celles de Bootstrap
+// Import de quelques fichiers Bootstrap Importants pour le map merge car je vais ajouter des classes utilitaires à celles de Bootstrap
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/utilities"; //Mes classes vont s'ajouter ici à ceux de Bootstrap
+@import "../node_modules/bootstrap/scss/utilities"; // Mes classes vont s'ajouter ici à ceux de Bootstrap
 
-//Import de mes propres classes utilitaires
-@import "./style_utilities.scss";
+// Import de mes propres classes utilitaires
+@import "./style_utilities";
 
-//Import de Tout le reste de Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Import de Tout le reste de Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
 
-//Mes styles CSS
+// Mes styles CSS
 .separateur {
-    width: 100%;
-    height: 4.7rem;
-    background-color: $white;
-    border: solid $dark;
-    border-width: 1px 0;
+  width: 100%;
+  height: 4.7rem;
+  background-color: $white;
+  border: solid $dark;
+  border-width: 1px 0;
 }
