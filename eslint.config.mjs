@@ -8,7 +8,10 @@ export default defineConfig([
     plugins: { js },
     extends: ["js/recommended"],
     languageOptions: {
-      globals: globals.browser,
+      globals: {
+        globals.browser, // Garde les globales du navigateur (window, document)
+        globals.jquery, // Reconnaît "$" et "jQuery"
+      },
     },
     rules: {
       eqeqeq: "error", //Force l'usage de l'égalité triple === au lieu de la double ==.
